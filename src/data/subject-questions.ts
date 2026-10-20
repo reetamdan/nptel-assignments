@@ -1,9 +1,12 @@
 import { programmingGenerativeAiQuestions } from "@/data/programming-generative-ai-questions";
+import { innovationBusinessModelsEntrepreneurshipQuestions } from "@/data/innovation-business-models-entrepreneurship-questions";
 import type { Question } from "@/data/questions";
 import type { SubjectId } from "@/data/subjects";
 
 export function getQuestionsForSubject(subject: SubjectId): Question[] {
   switch (subject) {
+    case "innovation-business-models-entrepreneurship":
+      return innovationBusinessModelsEntrepreneurshipQuestions;
     case "programming-generative-ai":
       return programmingGenerativeAiQuestions;
     default:

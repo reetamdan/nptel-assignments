@@ -1,4 +1,7 @@
-export const subjectIds = ["programming-generative-ai"] as const;
+export const subjectIds = [
+  "programming-generative-ai",
+  "innovation-business-models-entrepreneurship",
+] as const;
 
 export type SubjectId = (typeof subjectIds)[number];
 
@@ -17,6 +20,13 @@ export const subjects: Record<SubjectId, SubjectInfo> = {
     shortLabel: "GenAI",
     description: "Python fundamentals, algorithms, and GenAI-assisted programming — week-wise quizzes.",
     homeTitle: "Programming with Generative AI Quiz",
+  },
+  "innovation-business-models-entrepreneurship": {
+    id: "innovation-business-models-entrepreneurship",
+    label: "Innovation, Business Models and Entrepreneurship",
+    shortLabel: "IBME",
+    description: "Innovation, business models, sustainability, intellectual property, and entrepreneurship — Weeks 1–8.",
+    homeTitle: "Innovation, Business Models and Entrepreneurship Quiz",
   },
 };
 
